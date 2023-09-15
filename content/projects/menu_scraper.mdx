@@ -1,0 +1,24 @@
+---
+title: menu scraper
+description: A python web scraper for restaurants menus and items.
+date: "2020-06-1"
+published: true
+---
+
+menu scraper is a web scraper app built using python, Scrapy, Selenium, docker and other tools and libraries.
+
+The scraper is composed of 3 scrapers for different pages and its collecting data from a list restaurants online ordering urls.
+
+How it works:
+
+    - Upload URLS file (excel).
+
+    - Read each line and check URL and test it.
+
+    _ Based on the check use one of the 3 spiders to access it
+
+    - Use Selenium to remove banner and navigate to menu and collect items IDs
+
+    - Use APIs to get and collect data (name, price, discount, ....)
+
+    - Save the collected data in an excel file and store it to AWS S3.

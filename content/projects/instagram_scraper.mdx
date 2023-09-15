@@ -1,0 +1,25 @@
+---
+title: instagram_scraper
+description: A python web scraper for instagram profiles.
+date: "2020-06-1"
+published: true
+---
+
+Instagram scraper is a web scraper app built using python, Scrapy, Selenium, docker and other tools and libraries.
+
+The projects has a purpose of collecting data from list of instagram profiles given as an excel file.
+
+How it works:
+
+    - Upload profiles file (excel).
+
+    - Read each line and check for profile URL and test it.
+
+    - Use Scrapy to access URL and get profile instagram ID.
+
+    - Use instagram APIs to get and collect all public data (mainly looking for name and personal website links).
+
+    - Save the collected data in an excel file and store it to AWS S3.
+
+Blockers:
+Faced instagram requests limit, and solved using a payed tool to change request IP address and disable tracking.
